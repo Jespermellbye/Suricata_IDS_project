@@ -1,0 +1,32 @@
+09/15/2025-22:34:51.053195  [**] [1:1000100:1] Custom Alert: SSH connection attempt [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.0.36:56980 -> 192.168.0.45:22
+09/15/2025-22:34:51.081355  [**] [1:1000101:1] Custom Alert: Suspicious port 4444 traffic [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.0.36:56980 -> 192.168.0.45:4444
+09/15/2025-22:36:35.004542  [**] [1:1000100:1] Custom Alert: SSH connection attempt [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.0.36:56001 -> 192.168.0.45:22
+09/15/2025-22:36:35.261528  [**] [1:1000101:1] Custom Alert: Suspicious port 4444 traffic [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.0.36:56001 -> 192.168.0.45:4444
+09/15/2025-22:36:35.370128  [**] [1:1000100:1] Custom Alert: SSH connection attempt [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.0.36:49749 -> 192.168.0.45:22
+09/15/2025-22:36:35.521185  [**] [1:1000100:1] Custom Alert: SSH connection attempt [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.0.36:56816 -> 192.168.0.45:22
+09/15/2025-22:36:35.626086  [**] [1:1000100:1] Custom Alert: SSH connection attempt [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.0.36:56817 -> 192.168.0.45:22
+09/15/2025-22:36:35.730410  [**] [1:1000100:1] Custom Alert: SSH connection attempt [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.0.36:56818 -> 192.168.0.45:22
+09/15/2025-22:36:35.830560  [**] [1:1000100:1] Custom Alert: SSH connection attempt [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.0.36:56819 -> 192.168.0.45:22
+09/15/2025-22:36:35.931069  [**] [1:1000100:1] Custom Alert: SSH connection attempt [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.0.36:56820 -> 192.168.0.45:22
+09/15/2025-22:36:36.036138  [**] [1:1000100:1] Custom Alert: SSH connection attempt [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.0.36:56821 -> 192.168.0.45:22
+09/15/2025-22:36:36.068321  [**] [1:2200025:2] SURICATA ICMPv4 unknown code [**] [Classification: Generic Protocol Command Decode] [Priority: 3] {ICMP} 192.168.0.36:8 -> 192.168.0.45:9
+09/15/2025-22:36:36.068354  [**] [1:2200025:2] SURICATA ICMPv4 unknown code [**] [Classification: Generic Protocol Command Decode] [Priority: 3] {ICMP} 192.168.0.45:0 -> 192.168.0.36:9
+09/15/2025-22:36:36.068390  [**] [1:2200025:2] SURICATA ICMPv4 unknown code [**] [Classification: Generic Protocol Command Decode] [Priority: 3] {ICMP} 192.168.0.45:0 -> 192.168.0.36:9
+09/15/2025-22:36:36.152990  [**] [1:1000100:1] Custom Alert: SSH connection attempt [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.0.36:56828 -> 192.168.0.45:22
+09/15/2025-22:36:36.180167  [**] [1:1000100:1] Custom Alert: SSH connection attempt [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.0.36:56830 -> 192.168.0.45:22
+09/15/2025-22:36:36.213236  [**] [1:1000100:1] Custom Alert: SSH connection attempt [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.0.36:56831 -> 192.168.0.45:22
+09/15/2025-22:36:36.246389  [**] [1:1000100:1] Custom Alert: SSH connection attempt [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.0.36:56832 -> 192.168.0.45:22
+09/15/2025-22:36:36.738984  [**] [1:1000100:1] Custom Alert: SSH connection attempt [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.0.36:49750 -> 192.168.0.45:22
+09/15/2025-22:36:36.738984  [**] [1:1000100:1] Custom Alert: SSH connection attempt [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.0.36:49751 -> 192.168.0.45:22
+09/15/2025-22:36:36.792491  [**] [1:1000100:1] Custom Alert: SSH connection attempt [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.0.36:49752 -> 192.168.0.45:22
+09/15/2025-22:36:36.847831  [**] [1:1000100:1] Custom Alert: SSH connection attempt [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.0.36:49753 -> 192.168.0.45:22
+09/15/2025-22:36:36.891721  [**] [1:1000100:1] Custom Alert: SSH connection attempt [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.0.36:49754 -> 192.168.0.45:22
+09/15/2025-22:36:37.005145  [**] [1:1000100:1] Custom Alert: SSH connection attempt [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.0.36:49755 -> 192.168.0.45:22
+09/15/2025-22:36:37.048182  [**] [1:1000100:1] Custom Alert: SSH connection attempt [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.0.36:49756 -> 192.168.0.45:22
+09/15/2025-22:36:37.093690  [**] [1:1000100:1] Custom Alert: SSH connection attempt [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.0.36:49757 -> 192.168.0.45:22
+09/15/2025-22:43:14.398096  [**] [1:1000100:1] Custom Alert: SSH connection attempt [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.0.36:49786 -> 192.168.0.45:22
+09/15/2025-22:43:54.009711  [**] [1:1000100:1] Custom Alert: SSH connection attempt [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.0.36:49789 -> 192.168.0.45:22
+09/15/2025-22:43:54.049765  [**] [1:2210044:2] SURICATA STREAM Packet with invalid timestamp [**] [Classification: Generic Protocol Command Decode] [Priority: 3] {TCP} 192.168.0.45:22 -> 192.168.0.36:49789
+09/15/2025-22:44:03.538821  [**] [1:1000100:1] Custom Alert: SSH connection attempt [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.0.36:49790 -> 192.168.0.45:22
+09/15/2025-22:44:10.418060  [**] [1:1000100:1] Custom Alert: SSH connection attempt [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.0.36:49791 -> 192.168.0.45:22
+09/15/2025-22:45:46.291638  [**] [1:1000101:1] Custom Alert: Suspicious port 4444 traffic [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.0.36:49796 -> 192.168.0.45:4444
