@@ -149,4 +149,12 @@ Instead, focus was kept on **IDS mode** for monitoring and alerting.
 - Detected both **realistic scans** (nmap) and **custom test rules**.  
 - Hands-on demonstration of **network monitoring and intrusion detection**.  
 
- *Screenshot: GitHub repository structure in VS Code*  
+## Use of AI Assistance
+During this project, ChatGPT was used as a supportive tool. The AI was primarily applied to:
+- Provide step-by-step guidance for configuring Suricata on Raspberry Pi.
+- Help create and refine custom rules for SSH and suspicious port traffic.
+- Generate automation scripts (e.g., setting up rule files, structuring the GitHub repository).
+- Draft and format the initial version of the README and documentation structure.
+
+All testing, verification, and analysis of alerts were performed manually by me on the Raspberry Pi environment.
+The AI was not used to run the IDS or simulate traffic but rather to accelerate learning, scripting, and documentation.
