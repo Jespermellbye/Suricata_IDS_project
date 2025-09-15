@@ -1,4 +1,4 @@
-# Test Commands (only the tests we ran)
+# Test Commands
 
 > Run the monitor commands on the **Raspberry Pi** and run the test commands from the **attacker/client** machine (MacBook). Replace `<PI-IP>` with your Pi's IP.
 
