@@ -1,4 +1,4 @@
-# Test Commands
+# Test Commands (only the tests we ran)
 
 > Run the monitor commands on the **Raspberry Pi** and run the test commands from the **attacker/client** machine (MacBook). Replace `<PI-IP>` with your Pi's IP.
 
@@ -48,8 +48,6 @@ nc -vz <PI-IP> 4444
 ```
 **Expected:**  
 - `fast.log` shows: `Custom Alert: Suspicious port 4444 traffic` (sid:1000101).  
-
-> Note: this may be triggered indirectly by `nmap -sS -p-` if 4444 is in the scanned port list.
 
 ---
 
