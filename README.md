@@ -109,7 +109,6 @@ ping -c 4 <PI-IP>
 | Nmap aggressive  | Multiple alerts | ✅ |
 | SSH attempt      | Custom alert | ✅ |
 | Port 4444 access | Custom alert | ✅ |
-| ICMP ping        | Flow only | ✅ |
 
  *Screenshot: Combined fast.log showing ET SCAN + custom alerts*  
 
