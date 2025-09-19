@@ -115,7 +115,7 @@ alert tcp any any -> any 4444 (msg:"Custom Alert: Suspicious port 4444 traffic";
 
 ### Analysis
 
-![Fast log](tests/screenshots/fast.jpg)
+![Fast log](screenshots/fast.jpg)
 
 ## Analysis of Results
 
