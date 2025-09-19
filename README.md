@@ -139,7 +139,7 @@ On attacker:
 ```bash
 ssh pi@<PI-IP>
 ```
- *Screenshot: fast.log with "Custom Alert: SSH connection attempt"*
+
 
 ---
 
@@ -148,7 +148,7 @@ On attacker:
 ```bash
 nc -v <PI-IP> 4444
 ```
- *Screenshot: fast.log with "Custom Alert: Suspicious port 4444 traffic"*
+
 
 ---
 
@@ -157,11 +157,13 @@ On attacker:
 ```bash
 ping -c 4 <PI-IP>
 ```
- *Screenshot: eve.json with flow event (ICMP), fast.log unchanged*
+ 
 
 --
 
 ## Analysis
+
+![Fast log](tests/screenshots/attack_map.png)
 
 ### Alerts Observed
 | Test             | Expected | Observed |
