@@ -1,6 +1,6 @@
 # Intrusion Detection Project (Raspberry Pi + Suricata)
 
-Suricata + Raspberry Pi Screenshot
+
 
 ## Overview
 
