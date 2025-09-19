@@ -17,7 +17,11 @@ The goal was to detect simulated anomalies such as port scans, SSH attempts, and
 - Raspberry Pi 5 
 - MacBook Pro (attacker/test client)
 
-
+### Software
+- Pi Os
+- Suricata
+- nmap, netcat (for testing)
+- jq (for JSON log parsing)
 
 ### Suricata Configuration
 - **HOME_NET:** `192.168.0.0/24`
