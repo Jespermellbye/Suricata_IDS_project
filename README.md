@@ -129,7 +129,7 @@ The screenshot from `fast.log` confirms that the custom rules were triggered as 
 
 Overall, the test results confirm that Suricata detects both common behavior (port scans, SSH attempts) and custom-defined suspicious behavior (port 4444), while still logging ping without triggering alerts.
 
-
+ 
 ---
 
 ## Key Learnings
