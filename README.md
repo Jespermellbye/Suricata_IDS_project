@@ -106,8 +106,7 @@ alert tcp any any -> any 4444 (msg:"Custom Alert: Suspicious port 4444 traffic";
   ```
   → Logged as `flow` event in eve.json (no alert).
 
-
----
+--- 
 
 ## Results
 - **fast.log** captured alerts for SSH attempts and port 4444 probes.
@@ -115,46 +114,7 @@ alert tcp any any -> any 4444 (msg:"Custom Alert: Suspicious port 4444 traffic";
 - Ping and DNS correctly logged as flows without alerts.
 - Nmap scans produced multiple alerts.
 
----
-
-## Simulated Traffic
-
-### Port scan (default rules should trigger)
-On attacker:
-```bash
-nmap -sS <PI-IP>
-nmap -A <PI-IP>
-```
- *Screenshot: fast.log with ET SCAN alerts*
-
----
-
-### SSH attempt (custom rule)
-On attacker:
-```bash
-ssh pi@<PI-IP>
-```
-
-
----
-
-### Suspicious port 4444 (custom rule)
-On attacker:
-```bash
-nc -v <PI-IP> 4444
-```
-
-
----
-
-### ICMP ping (flow only, no alert)
-On attacker:
-```bash
-ping -c 4 <PI-IP>
-```
- 
-
---
+--- 
 
 ### Analysis
 
