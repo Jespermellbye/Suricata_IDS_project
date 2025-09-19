@@ -1,4 +1,4 @@
-# Intrusion Detection Project (Raspberry Pi + Suricata)
+# Suricata IDS project
 
 
 
