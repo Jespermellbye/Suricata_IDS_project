@@ -163,7 +163,7 @@ ping -c 4 <PI-IP>
 
 ## Analysis
 
-![Fast log](tests/screenshots/attack_map.png)
+![Fast log](tests/screenshots/fast.jpg)
 
 ### Alerts Observed
 | Test             | Expected | Observed |
