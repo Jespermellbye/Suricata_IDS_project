@@ -143,12 +143,7 @@ Overall, the test results confirm that Suricata detects both common behavior (po
 
 ## IDS vs IPS
 
-Suricata also supports **IPS mode** (Intrusion Prevention System) where traffic can be blocked.  
-For this project, IPS was **not enabled** because:
-1. Inline IPS could disrupt legitimate traffic.
-2. Raspberry Pi has limited performance overhead.
-
-Instead, focus was kept on **IDS mode** for monitoring and alerting.
+Suricata can run either as an IDS (Intrusion Detection System) or IPS (Intrusion Prevention System). In IDS mode it passively monitors traffic and generates alerts, like I did in this project, while in IPS mode it sits inline and can actively block or drop packets. For this project, IDS mode was chosen because the goal was safe detection and learning without risking disruptions. Running IPS on a lab device like a Raspberry Pi can easily cause problems if rules are misconfigured, even blocking the IP and cutting off access. IDS provides visibility and insight, while avoiding the danger of accidentally breaking the network.
 
 --- 
 ## Use of AI Assistance
