@@ -41,8 +41,7 @@ The goal was to detect simulated anomalies such as port scans, SSH attempts, and
         append: yes
   ```
 
-📷 *Screenshot: systemctl status suricata*  
-📷 *Screenshot: suricata -T showing both suricata.rules and custom.rules loaded*  
+
 
 ---
 
@@ -55,7 +54,7 @@ alert tcp any any -> any 22 (msg:"Custom Alert: SSH connection attempt"; sid:100
 alert tcp any any -> any 4444 (msg:"Custom Alert: Suspicious port 4444 traffic"; sid:1000101; rev:1;)
 ```
 
-📷 *Screenshot: custom.rules in VS Code*  
+
 
 ## Step-by-Step Methodology (what was done and why)
 
