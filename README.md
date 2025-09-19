@@ -106,11 +106,6 @@ alert tcp any any -> any 4444 (msg:"Custom Alert: Suspicious port 4444 traffic";
   ```
   → Logged as `flow` event in eve.json (no alert).
 
-- **DNS Query**
-  ```bash
-  dig @8.8.8.8 example.com
-  ```
-  → Logged as `dns` event in eve.json (no alert).
 
 ---
 
