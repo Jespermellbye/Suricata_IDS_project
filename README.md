@@ -59,6 +59,67 @@ alert tcp any any -> any 4444 (msg:"Custom Alert: Suspicious port 4444 traffic";
 
 📷 *Screenshot: custom.rules in VS Code*  
 
+## Step-by-Step Methodology (what was done and why)
+
+### 1. Environment Setup
+- Installed Suricata on a Raspberry Pi (`apt install suricata`).
+- Configured `HOME_NET` to reflect the local network range.
+- Verified installation with:
+  ```bash
+  sudo suricata -T -c /etc/suricata/suricata.yaml -v
+  ```
+
+**Why:** Ensures Suricata is installed and can parse rules.
+
+---
+
+### 2. Rule Configuration
+- Downloaded default rules with `suricata-update`.
+- Added custom rules for SSH and port 4444 probes.
+
+**Why:** Validates IDS by simulating realistic attack traffic.
+
+---
+
+### 3. Simulated Traffic Tests
+- **SSH Probe**
+  ```bash
+  nmap -sS -p22 <PI-IP>
+  ```
+  → Triggered *Custom SSH SYN* alert.
+
+- **Port 4444 Probe**
+  ```bash
+  nc -vz <PI-IP> 4444
+  ```
+  → Triggered *Custom 4444 SYN* alert.
+
+- **Full Port Scan**
+  ```bash
+  nmap -sS -p- <PI-IP>
+  ```
+  → Triggered multiple alerts (ET SCAN + custom rules).
+
+- **ICMP Ping**
+  ```bash
+  ping -c 4 <PI-IP>
+  ```
+  → Logged as `flow` event in eve.json (no alert).
+
+- **DNS Query**
+  ```bash
+  dig @8.8.8.8 example.com
+  ```
+  → Logged as `dns` event in eve.json (no alert).
+
+---
+
+## Results
+- **fast.log** captured alerts for SSH attempts and port 4444 probes.
+- **eve.json** provided detailed logs with IPs, ports, and metadata.
+- Ping and DNS correctly logged as flows without alerts.
+- Nmap scans produced multiple alerts.
+
 ---
 
 ## Simulated Traffic
