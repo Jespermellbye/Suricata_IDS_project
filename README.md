@@ -161,19 +161,22 @@ ping -c 4 <PI-IP>
 
 --
 
-## Analysis
+### Analysis
 
 ![Fast log](tests/screenshots/fast.jpg)
 
-### Alerts Observed
-| Test             | Expected | Observed |
-|------------------|----------|----------|
-| Nmap SYN scan    | ET SCAN alert | ✅ |
-| Nmap aggressive  | Multiple alerts | ✅ |
-| SSH attempt      | Custom alert | ✅ |
-| Port 4444 access | Custom alert | ✅ |
+## Analysis of Results
 
- *Screenshot: Combined fast.log showing ET SCAN + custom alerts*  
+The screenshot from `fast.log` confirms that the custom rules were triggered as expected:
+
+- **SSH SYN alerts**: Multiple alerts labeled *Custom Alert: SSH connection attempt* were generated when running an Nmap SYN scan on port 22. Each entry corresponds to a SYN packet sent by the scanner. This validates that the IDS correctly identified repeated probes against the SSH service.
+
+- **Port 4444 alerts**: The alert *Custom Alert: Suspicious port 4444 traffic* was triggered when testing access to TCP port 4444 using `nc`. This demonstrates how custom rules can highlight connections to unusual or high-risk ports that are often associated with malware or backdoors.
+
+- **Other Suricata messages**: Lines such as *SURICATA STREAM Packet with invalid timestamp* were also observed. These originate from Suricata’s built-in stream engine and are not part of the custom rules. They highlight potential anomalies in TCP packet sequencing but can be considered noise in this controlled test.
+
+Overall, the test results confirm that Suricata detects both common behavior (port scans, SSH attempts) and custom-defined suspicious behavior (port 4444), while still logging ping without triggering alerts.
+
 
 ---
 
@@ -195,22 +198,7 @@ For this project, IPS was **not enabled** because:
 
 Instead, focus was kept on **IDS mode** for monitoring and alerting.
 
----
-
-## Future Work
-
-- Integrate Suricata logs into a SIEM (e.g., ELK or Wazuh).  
-- Build dashboards for visualization.  
-- Experiment with IPS in a controlled lab environment.  
-
----
-
-## Conclusion
-
-- Raspberry Pi can act as a **low-cost IDS** using Suricata.  
-- Detected both **realistic scans** (nmap) and **custom test rules**.  
-- Hands-on demonstration of **network monitoring and intrusion detection**.  
-
+--- 
 ## Use of AI Assistance
 During this project, ChatGPT was used as a supportive tool. The AI was primarily applied to:
 - Provide step-by-step guidance for configuring Suricata on Raspberry Pi.
@@ -220,3 +208,7 @@ During this project, ChatGPT was used as a supportive tool. The AI was primarily
 
 All testing, verification, and analysis of alerts were performed manually by me on the Raspberry Pi environment.
 The AI was not used to run the IDS or simulate traffic but rather to accelerate learning, scripting, and documentation.
+
+## References
+- ChatGPT (OpenAI). (2025). Assistance with Suricata configuration and documentation.  
+- Suricata Documentation: <https://suricata.io/documentation/>  
